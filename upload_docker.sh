@@ -6,10 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=heshamxq/uda_ml
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker tag uda_ml $dockerpath
+docker login --username=heshamxq
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
