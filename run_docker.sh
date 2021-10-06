@@ -12,4 +12,4 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker Run -p 8000:80 uda_ml
+docker run -p 8000:80 uda_ml
